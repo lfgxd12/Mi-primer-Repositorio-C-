@@ -1,5 +1,6 @@
 #include <iostream>
 #include <sstream>
+#include "Archivo Extra.h"
 
 class Move{
     protected:
@@ -44,5 +45,7 @@ class Pokemon{
 int main(){
     Pokemon P1 = Pokemon("Froakie", "Water", new Move("Water Gun", "Water"));
     std::cout << P1.toString() << std::endl;
+    ExtraImplementation EI1;
+    EI1.saludate();
     return 0;
 }
